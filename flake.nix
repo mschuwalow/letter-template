@@ -8,8 +8,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
 
         texliveEnv = pkgs.texlive.combine {
-          inherit (pkgs.texlive)
-            scheme-medium csquotes changepage;
+          inherit (pkgs.texlive) scheme-medium csquotes changepage;
         };
 
         mkPackage = isShell:
