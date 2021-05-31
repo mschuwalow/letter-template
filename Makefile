@@ -5,7 +5,7 @@ SRC_DIR := $(PROJECT_DIR)/src
 
 MAINFILE := letter
 
-SOURCE_FILES = $(fd -t f -e text -e lco -e png $(SRC_DIR))
+SOURCE_FILES = $(fd -t f -e tex -e lco -e png $(SRC_DIR))
 
 .PHONY: fmt fmt-nix default clean out-dir
 
